@@ -1,7 +1,7 @@
 /*stylesheet*/
 
 body {
-	margin: 20px;	
+	margin: 0;	
 	background: black;
 	color: white;
 	font-family: 'Roboto Mono', monospace;
@@ -10,4 +10,12 @@ body {
 
 h1, h2 {
 	font-weight: 200;
+}
+
+div {
+	width: 600px;
+	height: 600px;
+	background: green;
+	margin: 2em;
+	padding: 2em;
 }
