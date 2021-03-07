@@ -3,6 +3,9 @@
 body {
 	margin: 0;	
 	background: black;
+	background-image: url("../images/clouds.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: white;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 200;
@@ -63,6 +66,16 @@ h1, h2 {
 	margin-bottom: 1em;
 }
 
+#nav li a {
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+#nav li a:hover {
+	color: brown;
+	text-decoration: none;
+	background: white;
+}
 
 .quote-holder {
 	height: 40vh;
