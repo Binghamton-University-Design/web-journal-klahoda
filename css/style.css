@@ -3,9 +3,6 @@
 body {
 	margin: 0;	
 	background: black;
-	background-image: url("../images/clouds.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	color: white;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 200;
@@ -84,11 +81,72 @@ h1, h2 {
 	align-items: center;
 	justify-content: center;
 	padding: 0 3em;
+	margin-bottom: 2em;
 }
 
 .quote {
 	font-size: 2em;
 }
+
+#exquisite {
+	position: relative;
+	margin-bottom: 2em;
+}
+
+#exquisite .grid {
+	grid-gap: 0;
+}
+
+#exquisite .grid img {
+	margin-bottom: 0;
+}
+
+#projects {
+	margin-bottom: 2em;
+}
+
+#projects .grid-item {
+	color: white;
+	position: relative;
+}
+
+#projects .grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#projects .grid-item .overlay {
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#projects .grid-item:hover .overlay {
+	opacity: 1;
+}
+
+#projects .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+}
+
+/* Page specific styles */
+
+body.p1 {
+	background-image: url("../images/clouds.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* ------------ */
 
 @media (max-width: 699px) {
 
