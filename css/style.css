@@ -45,13 +45,124 @@ h1, h2 {
 	height: auto;
 }
 
+.item span {
+	background: blue;
+	margin: 10px;
+	display: block;
+	width: 50%;
+	float: right;
+	font-weight: 800;
+}
+
 .item img {
 	margin-bottom: 2em;
 }
 
+.playground-box {
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+/* block */
+.item .left {
+	float: left;
+	width: 50%;
+	background: green;
+}
+
+.item .right {
+	float: right;
+	width: 50%;
+	background: red;
+}
+
+/* grid */
+
+.item .playground-box.grid {
+	grid-gap: 0;
+}
+
+.item .grid-left {
+	background: green;
+}
+
+.item .grid-right {
+	background: red;
+}
+
+/* flex */
+
+.item .flex-version {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item .flex-left {
+	background: green;
+}
+
+.item .flex-right {
+	background: red;
+}
+
+.big-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	background: purple;
+}
+
+.little-box {
+	background: black;
+	width: 100px;
+	height: 100px;
+}
+
+
+
 #content {
 	/*background: red;*/
 }
+
+/* alt nav using flex */
+
+#topnav {
+
+}
+
+#topnav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+#topnav ul {
+	display: flex;
+}
+
+#topnav li {
+	margin-right: 2em;
+	margin-bottom: 0;
+}
+
+#topnav li:first-child {
+	margin-right: auto;
+}
+
+#topnav li:last-child {
+	margin-right: 0;
+}
+
+#topnav li a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/*nav */
 
 #nav ul {
   list-style: none;
